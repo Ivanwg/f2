@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="title" content="">
+  <meta name="description" content="">
+
+  <title></title>
+
+<script defer src="js/catalog.js"></script><link href="css/catalog.css" rel="stylesheet"></head>
+
+<body>
+  <header class="header"> <div class="big-padding-container"> <div class="my-3 mx-auto row row-cols-3 align-items-center header__content"> <nav class="navbar navbar-expand-md"> <div class=""> <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button> <div class="collapse navbar-collapse" id="navbarTogglerDemo02"> <ul class="navbar-nav"> <li class="nav-item px-1 px-xxl-3"> <a class="nav-link btn-black" aria-current="page" href="/"> <span class="text"> Главная </span> </a> </li> <li class="nav-item px-1 px-xxl-3"> <a class="nav-link btn-black" href="/catalog.html"> <span class="text"> Каталог </span> </a> </li> <li class="nav-item px-1 px-xxl-3"> <a class="nav-link btn-black" href="/about.html"> <span class="text"> О нас </span> </a> </li> <li class="nav-item px-1 px-xxl-3"> <a class="nav-link btn-black" href="/contacts.html"> <span class="text"> Контакты </span> </a> </li> </ul> </div> </div> </nav> <div class="d-flex align-items-center justify-content-center header__logo"> <a href="/"> <img src="img/logo.svg" alt=""> </a> </div> <ul class="btn-group"> <li class="px-1 px-xxl-2"> <button class="btn btn-black_fill"> <svg width="28" height="29" viewBox="0 0 28 29" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M23.3333 14.4415V8.60815H25.6667V15.6082H23.3333M23.3333 20.2748H25.6667V17.9415H23.3333M11.6667 15.6082C14.7817 15.6082 21 17.1715 21 20.2748V23.7748H2.33333V20.2748C2.33333 17.1715 8.55166 15.6082 11.6667 15.6082ZM11.6667 5.10815C12.9043 5.10815 14.0913 5.59982 14.9665 6.47499C15.8417 7.35016 16.3333 8.53714 16.3333 9.77482C16.3333 11.0125 15.8417 12.1995 14.9665 13.0747C14.0913 13.9498 12.9043 14.4415 11.6667 14.4415C10.429 14.4415 9.242 13.9498 8.36683 13.0747C7.49166 12.1995 7 11.0125 7 9.77482C7 8.53714 7.49166 7.35016 8.36683 6.47499C9.242 5.59982 10.429 5.10815 11.6667 5.10815ZM11.6667 17.8248C8.20166 17.8248 4.55 19.5282 4.55 20.2748V21.5582H18.7833V20.2748C18.7833 19.5282 15.1317 17.8248 11.6667 17.8248ZM11.6667 7.32482C11.0169 7.32482 10.3937 7.58295 9.93425 8.04241C9.47479 8.50187 9.21666 9.12504 9.21666 9.77482C9.21666 10.4246 9.47479 11.0478 9.93425 11.5072C10.3937 11.9667 11.0169 12.2248 11.6667 12.2248C12.3164 12.2248 12.9396 11.9667 13.3991 11.5072C13.8585 11.0478 14.1167 10.4246 14.1167 9.77482C14.1167 9.12504 13.8585 8.50187 13.3991 8.04241C12.9396 7.58295 12.3164 7.32482 11.6667 7.32482Z" fill="black"/> </svg> </button> </li> <li class="px-1 px-xxl-2"> <button class="btn btn-black_stroke"> <svg width="28" height="29" viewBox="0 0 28 29" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M24.5 24.9413L19.2663 19.6983M22.1667 12.6913C22.1667 15.3214 21.1219 17.8437 19.2622 19.7035C17.4024 21.5632 14.8801 22.608 12.25 22.608C9.61995 22.608 7.0976 21.5632 5.23787 19.7035C3.37813 17.8437 2.33334 15.3214 2.33334 12.6913C2.33334 10.0613 3.37813 7.53892 5.23787 5.67918C7.0976 3.81945 9.61995 2.77466 12.25 2.77466C14.8801 2.77466 17.4024 3.81945 19.2622 5.67918C21.1219 7.53892 22.1667 10.0613 22.1667 12.6913V12.6913Z" stroke="black" stroke-width="2" stroke-linecap="round"/> </svg> </button> </li> <li class="px-1 px-xxl-2"> <a href="favourites.html" class="btn btn-black_stroke"> <svg width="28" height="29" viewBox="0 0 28 29" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M8.16668 3.94141C4.94551 3.94141 2.33334 6.52674 2.33334 9.71641C2.33334 12.2912 3.35418 18.4022 13.4027 24.5797C13.5827 24.6893 13.7893 24.7472 14 24.7472C14.2107 24.7472 14.4173 24.6893 14.5973 24.5797C24.6458 18.4022 25.6667 12.2912 25.6667 9.71641C25.6667 6.52674 23.0545 3.94141 19.8333 3.94141C16.6122 3.94141 14 7.44141 14 7.44141C14 7.44141 11.3878 3.94141 8.16668 3.94141Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/> </svg> </a> </li> <li class="px-1 px-xxl-2"> <button class="btn btn-black_fill"> <svg width="28" height="29" viewBox="0 0 28 29" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M25.2355 19.634H8.95234L9.76991 17.9688L23.3543 17.9441C23.8137 17.9441 24.2074 17.616 24.2894 17.1621L26.1707 6.63203C26.2199 6.35586 26.1461 6.07148 25.9656 5.85547C25.8764 5.74916 25.7652 5.66352 25.6396 5.6045C25.514 5.54548 25.377 5.51449 25.2383 5.51367L7.95702 5.45625L7.80937 4.76172C7.7164 4.31875 7.31718 3.99609 6.86328 3.99609H2.63867C2.38267 3.99609 2.13716 4.09779 1.95614 4.2788C1.77513 4.45982 1.67343 4.70533 1.67343 4.96133C1.67343 5.21732 1.77513 5.46284 1.95614 5.64385C2.13716 5.82487 2.38267 5.92656 2.63867 5.92656H6.08124L6.72656 8.99453L8.31523 16.6863L6.26992 20.025C6.1637 20.1684 6.09972 20.3386 6.08523 20.5164C6.07073 20.6942 6.10629 20.8726 6.18788 21.0313C6.35195 21.3566 6.68281 21.5617 7.04921 21.5617H8.7664C8.40032 22.048 8.20258 22.6402 8.20312 23.2488C8.20312 24.7965 9.46093 26.0543 11.0086 26.0543C12.5562 26.0543 13.8141 24.7965 13.8141 23.2488C13.8141 22.6391 13.6117 22.0457 13.2508 21.5617H17.6559C17.2898 22.048 17.092 22.6402 17.0926 23.2488C17.0926 24.7965 18.3504 26.0543 19.898 26.0543C21.4457 26.0543 22.7035 24.7965 22.7035 23.2488C22.7035 22.6391 22.5012 22.0457 22.1402 21.5617H25.2383C25.7687 21.5617 26.2035 21.1297 26.2035 20.5965C26.2019 20.3408 26.0993 20.096 25.9179 19.9157C25.7366 19.7354 25.4913 19.6341 25.2355 19.634ZM8.35898 7.35938L24.1035 7.41133L22.5613 16.0465L10.1937 16.0684L8.35898 7.35938ZM11.0086 24.1129C10.5328 24.1129 10.1445 23.7246 10.1445 23.2488C10.1445 22.773 10.5328 22.3848 11.0086 22.3848C11.4844 22.3848 11.8726 22.773 11.8726 23.2488C11.8726 23.478 11.7816 23.6978 11.6196 23.8598C11.4575 24.0219 11.2378 24.1129 11.0086 24.1129ZM19.898 24.1129C19.4223 24.1129 19.034 23.7246 19.034 23.2488C19.034 22.773 19.4223 22.3848 19.898 22.3848C20.3738 22.3848 20.7621 22.773 20.7621 23.2488C20.7621 23.478 20.6711 23.6978 20.509 23.8598C20.347 24.0219 20.1272 24.1129 19.898 24.1129Z" fill="black"/> </svg> </button> </li> </ul> </div> </div> </header>
+
+    <section class="catalog last-section">
+      <div class="big-padding-container">
+        <h1 class="catalog__title">Каталог</h1>
+
+      </div>
+      <div class="big-padding-container">
+        <div class="catalog__content">
+          <div class="catalog__filters-column">
+            <div class="catalog__categories">
+              <h4 class="catalog__filter-title">Категории</h4>
+              
+              <ul class="categories-list catalog__f-list catalog__f-list_categs">
+                <li>
+                  <a href="#" class="btn-gray categories-list__link">Дизайнерские предметы мебели и товары для дома</a>
+                </li>
+                <li>
+                  <a href="#" class="btn-gray categories-list__link">Дизайнерские предметы</a>
+                </li>
+                <li>
+                  <a href="#" class="btn-gray categories-list__link">Дизайнерские предметы</a>
+                </li>
+                <li>
+                  <a href="#" class="btn-gray categories-list__link">Дизайнерские предметы</a>
+                </li>
+              </ul>
+            </div>
+            <div class="catalog__prices">
+              <h4 class="catalog__filter-title">Цена</h4>
+              <input id="ex1" data-slider-id='ex1Slider' type="text" data-slider-min="0" data-slider-max="20" data-slider-step="1" data-slider-value="14"/>
+            </div>
+            <div class="catalog__colors">
+              <h4 class="catalog__filter-title">Цвет</h4>
+              
+              <ul class="catalog__f-list catalog__f-list_colors">
+                <li>
+                  <a href="#" class="cube-color" style="background-color: red; outline-color: red;"></a>
+                </li>
+                <li>
+                  <a href="#" class="cube-color" style="background-color: red; outline-color: red;"></a>
+                </li>
+                <li>
+                  <a href="#" class="cube-color" style="background-color: red; outline-color: red;"></a>
+                </li>
+                <li>
+                  <a href="#" class="cube-color" style="background-color: red; outline-color: red;"></a>
+                </li>
+              </ul>
+            </div>
+            <div class="catalog__corners">
+              <h4 class="catalog__filter-title">Corners</h4>
+              
+              <ul class="catalog__f-list catalog__f-list_counted">
+                <li>
+                  <a href="#" class="btn-gray catalog__f-link">Name 
+                    <span class="count">(8)</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="btn-gray catalog__f-link">Name 
+                    <span class="count">(8)</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="btn-gray catalog__f-link">Name 
+                    <span class="count">(8)</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="btn-gray catalog__f-link">Name 
+                    <span class="count">(8)</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="catalog__corners">
+              <h4 class="catalog__filter-title">Corners</h4>
+              
+              <ul class="catalog__f-list catalog__f-list_counted">
+                <li>
+                  <a href="#" class="btn-gray catalog__f-link">Name 
+                    <span class="count">(8)</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="btn-gray catalog__f-link">Name 
+                    <span class="count">(8)</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="btn-gray catalog__f-link">Name 
+                    <span class="count">(8)</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="btn-gray catalog__f-link">Name 
+                    <span class="count">(8)</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="catalog__tags">
+              <h4 class="catalog__filter-title">Tags</h4>
+              
+              <ul class="catalog__f-list catalog__f-list_tags">
+                <li>
+                  <a href="#" class="tag-btn">Tag</a>
+                </li>
+                <li>
+                  <a href="#" class="tag-btn">M12</a>
+                </li>
+                <li>
+                  <a href="#" class="tag-btn">Biguhih</a>
+                </li>
+                <li>
+                  <a href="#" class="tag-btn">N2</a>
+                </li>
+                <li>
+                  <a href="#" class="tag-btn">Tag</a>
+                </li>
+                <li>
+                  <a href="#" class="tag-btn">M12</a>
+                </li>
+                <li>
+                  <a href="#" class="tag-btn">Biguhih</a>
+                </li>
+                <li>
+                  <a href="#" class="tag-btn">N2</a>
+                </li>
+                <li>
+                  <a href="#" class="tag-btn">Tag</a>
+                </li>
+                <li>
+                  <a href="#" class="tag-btn">M12</a>
+                </li>
+                <li>
+                  <a href="#" class="tag-btn">Biguhih</a>
+                </li>
+                <li>
+                  <a href="#" class="tag-btn">N2</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="catalog__main-column">
+            <ul class="d-flex catalog__tabs">
+              <li>
+                <a href="#" class="btn btn-gray tab tab_bottom active">
+                  <span class="text">
+                    Все
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="btn btn-gray tab tab_bottom">
+                  <span class="text">
+                    Канцелярия
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="btn btn-gray tab tab_bottom">
+                  <span class="text">
+                    Посуда
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="btn btn-gray tab tab_bottom">
+                  <span class="text">
+                    Аксессуары
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="btn btn-gray tab tab_bottom">
+                  <span class="text">
+                    Уход за собой
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="btn btn-gray tab tab_bottom">
+                  <span class="text">
+                    Коллаборации
+                  </span>
+                </a>
+              </li>
+            </ul>
+            <div class="d-flex align-items-center justify-content-between catalog__filters">
+              <p class="catalog__displayed">
+                Показано 1–12 of 18 результатов
+              </p>
+              <div class="d-flex align-items-center justify-content-center filters">
+                <div class="d-flex align-items-center pagination">
+                  <span class="me-2">Показать</span>
+                  <div class="d-flex align-items-center pagination__list">
+                    <a href="#" class="tab tab_bottom active">
+                      <span class="text">12</span>
+                    </a>
+                    <a href="#" class="tab tab_bottom">
+                      <span class="text">15</span>
+                    </a>
+                    <a href="#" class="tab tab_bottom">
+                      <span class="text">16</span>
+                    </a>
+                  </div>
+                </div>
+                <div class="btn-group sort-dropdown">
+                  <button class="btn gray-round btn-lg dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Сортировка
+                  </button>
+                  <ul class="dropdown-menu w-100">
+                    <li>
+                      <a href="#" class="dropdown-item">Параметр</a>
+                    </li>
+                    <li>
+                      <a href="#" class="dropdown-item">Параметр</a>
+                    </li>
+                    <li>
+                      <a href="#" class="dropdown-item">Параметр</a>
+                    </li>
+                  </ul>
+                </div>
+    
+                <div class="d-flex align-items-center change-grid-btns">
+                  <a href="#" class="grid-btn active">
+                    <svg width="56" height="44" viewBox="0 0 56 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <circle cx="27.718" cy="22.5" r="21.5" fill="" stroke="transparent" />
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M17.218 12H25.6391V20.4211H17.218V12ZM28.797 12H37.218V20.4211H28.797V12ZM28.797 23.5789H37.218V32H28.797V23.5789ZM17.218 23.5789H25.6391V32H17.218V23.5789Z"
+                        stroke="black" />
+                    </svg>
+                  </a>
+                  <a href="#" class="grid-btn">
+                    <svg width="55" height="44" viewBox="0 0 55 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <circle cx="27.2822" cy="21.5" r="21" stroke="transparent"/>
+                      <path d="M29.7822 13H37.7822M29.7822 18H37.7822M29.7822 26H37.7822M29.7822 31H37.7822M24.7822 12H17.7822V19H24.7822V12ZM24.7822 25H17.7822V32H24.7822V25Z" stroke="black" stroke-miterlimit="10" stroke-linecap="square"/>
+                    </svg>                  
+                  </a>
+                </div>
+              </div>
+  
+            </div>
+            <div class="catalog__cards">
+              <div class="catalog__slide">
+                <div class="product-card catalog__card" aria-label="disabled">
+                  <a href="#" class="catalog__slide">
+                    <div class="product-card__img-wrap">
+                      <img class="product-card__img"
+                        src="https://pvhmarket.ru/upload/resize_cache/webp/iblock/5c7/5c76a9e147922460739c1cd761c45e14.webp"
+                        alt="">
+                      <div class="not-available">
+                        <div class="text">нет в <br> наличии</div>
+                      </div>
+                    </div>
+                    <div class="product-card__text">
+                      <h5 class="product-card__title">Title of card</h5>
+                      <p class="product-card__price">$ 34.98</p>
+                    </div>
+                  </a>
+                  <span class="sticker sticker_vinous">30%</span>
+                </div>
+              </div>
+              <div class="catalog__slide">
+                <div class="product-card catalog__card">
+                  <a href="#" class="catalog__slide">
+                    <div class="product-card__img-wrap">
+                      <img class="product-card__img"
+                        src="https://pvhmarket.ru/upload/resize_cache/webp/iblock/5c7/5c76a9e147922460739c1cd761c45e14.webp"
+                        alt="">
+  
+                    </div>
+                    <div class="product-card__text">
+                      <h5 class="product-card__title">Title of card</h5>
+                      <p class="product-card__price">$ 34.98</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="catalog__slide">
+                <div class="product-card catalog__card">
+                  <a href="#" class="catalog__slide">
+                    <div class="product-card__img-wrap">
+                      <img class="product-card__img"
+                        src="https://pvhmarket.ru/upload/resize_cache/webp/iblock/5c7/5c76a9e147922460739c1cd761c45e14.webp"
+                        alt="">
+  
+                    </div>
+                    <div class="product-card__text">
+                      <h5 class="product-card__title">Title of card</h5>
+                      <p class="product-card__price">$ 34.98</p>
+                    </div>
+                  </a>
+                  <span class="sticker sticker_orange sticker_signed">New</span>
+                </div>
+              </div>
+              <div class="catalog__slide">
+                <div class="product-card catalog__card" aria-label="disabled">
+                  <a href="#" class="catalog__slide">
+                    <div class="product-card__img-wrap">
+                      <img class="product-card__img"
+                        src="https://pvhmarket.ru/upload/resize_cache/webp/iblock/5c7/5c76a9e147922460739c1cd761c45e14.webp"
+                        alt="">
+                      <div class="not-available">
+                        <div class="text">нет в <br> наличии</div>
+                      </div>
+                    </div>
+                    <div class="product-card__text">
+                      <h5 class="product-card__title">Title of card</h5>
+                      <p class="product-card__price">$ 34.98</p>
+                    </div>
+                  </a>
+                  <span class="sticker sticker_vinous">30%</span>
+                </div>
+              </div>
+              <div class="catalog__slide">
+                <div class="product-card catalog__card">
+                  <a href="#" class="catalog__slide">
+                    <div class="product-card__img-wrap">
+                      <img class="product-card__img"
+                        src="https://pvhmarket.ru/upload/resize_cache/webp/iblock/5c7/5c76a9e147922460739c1cd761c45e14.webp"
+                        alt="">
+  
+                    </div>
+                    <div class="product-card__text">
+                      <h5 class="product-card__title">Title of card</h5>
+                      <p class="product-card__price">$ 34.98</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="catalog__slide">
+                <div class="product-card catalog__card">
+                  <a href="#" class="catalog__slide">
+                    <div class="product-card__img-wrap">
+                      <img class="product-card__img"
+                        src="https://pvhmarket.ru/upload/resize_cache/webp/iblock/5c7/5c76a9e147922460739c1cd761c45e14.webp"
+                        alt="">
+  
+                    </div>
+                    <div class="product-card__text">
+                      <h5 class="product-card__title">Title of card</h5>
+                      <p class="product-card__price">$ 34.98</p>
+                    </div>
+                  </a>
+                  <span class="sticker sticker_orange sticker_signed">New</span>
+                </div>
+              </div>
+            </div>
+
+            <ul class="circle-pagination catalog__bottom-pagination">
+              <li class="">
+                <a href="#" class="circle-paginator active">1</a>
+              </li>
+              <li class="">
+                <a href="#" class="circle-paginator">2</a>
+              </li>
+              <li class="">
+                <a href="#" class="circle-paginator">3</a>
+              </li>
+              <li class="">
+                <a href="#" class="circle-paginator next">Далее</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <footer class="footer"> <div class="content-container footer__content footer__content_top"> <div class="footer__logo"> <a href="/"> <img src="img/logo.svg" alt=""> </a> </div> <div class="footer__col footer__col_desc footer__desc"> 400 University Drive Suite 200 Coral Gables, <br> FL 33134 USA </div> <a href="#" class="btn btn-gray"> Разделы </a> <a href="#" class="btn btn-gray"> Помощь </a> <a href="#" class="btn btn-gray"> Блог </a> <a href="#" class="btn btn-black"> <span class="text"> Главная </span> </a> <a href="#" class="btn btn-black"> <span class="text"> Оплата </span> </a> <a href="#" class="btn btn-black"> <span class="text"> Магазин </span> </a> <a href="#" class="btn btn-black footer__col footer__col_long-2"> <span class="text"> Возвраты </span> </a> <a href="#" class="btn btn-black"> <span class="text"> О нас </span> </a> <a href="#" class="btn btn-black footer__col footer__col_long-2"> <span class="text"> Политика конфиденциальности </span> </a> <a href="#" class="btn btn-black"> <span class="text"> Контакты </span> </a> <form action="#" class="subscribe-form footer__subscribe-form footer__col footer__col_form"> <label> <input type="text" placeholder="Enter Your Email Address"> </label> <button type="submit" class="subscribe-form__submit"> <span class="text"> Подписаться </span> </button> </form> </div> <div class="content-container footer__content footer__content_bottom"> 2023 furino. Все права защищены </div> </footer>
+</body>
+
+</html>

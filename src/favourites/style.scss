@@ -1,0 +1,46 @@
+@import '../assets/styles/_mixin';
+@import '../assets/styles/custom-normalize';
+@import '../assets/styles/load-fonts.css';
+@import '../assets/styles/_variables';
+@import '../assets/styles/fancybox.css';
+@import '../assets/bootstrap/css/bootstrap.css';
+@import '../assets/styles/common';
+
+
+.favourites {
+  &__title {
+    margin: 96px 0;
+    font-size: 48px;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  &__content {
+    border-top: 1px solid #E6E6E6;
+    padding-top: 70px;
+  }
+  &__tabs {
+    margin-bottom: 36px;
+  }
+  &__cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    column-gap: 30px;
+    row-gap: 54px;
+    max-width: 1080px;
+    margin: 0 auto;
+  }
+  &__filters {
+    margin-bottom: 40px;
+  }
+  &__displayed {
+    color: #777;
+    font-family: Circe;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 175%;
+  }
+}
+
+

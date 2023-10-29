@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="title" content="">
+  <meta name="description" content="">
+
+  <title></title>
+
+</head>
+
+<body>
+  <%= require('html-loader!../partials/header.html').default %>
+
+
+
+    <section class="detail-preview">
+      <div class="content-container">
+        <div class="detail-preview__content">
+          <div class="row row-cols-2">
+            <div class="col pe-5">
+              <div class="position-relative detail-preview__preview">
+                <div class="swiper detail-preview__slider" id="js-detail-slider">
+                  <!-- Additional required wrapper -->
+                  <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide detail-preview__slide">
+                      <a href="https://mebel-restoran.ru/images/virtuemart/product/crm_VYHlnPwSUYid.png"
+                        data-fancybox="photos">
+                        <img src="https://mebel-restoran.ru/images/virtuemart/product/crm_VYHlnPwSUYid.png" alt="">
+                      </a>
+                    </div>
+                    <div class="swiper-slide detail-preview__slide">
+                      <a href="https://mebel-restoran.ru/images/virtuemart/product/crm_VYHlnPwSUYid.png"
+                        data-fancybox="photos">
+                        <img src="https://mebel-restoran.ru/images/virtuemart/product/crm_VYHlnPwSUYid.png" alt="">
+                      </a>
+                    </div>
+                    <div class="swiper-slide detail-preview__slide">
+                      <a href="https://mebel-restoran.ru/images/virtuemart/product/crm_VYHlnPwSUYid.png"
+                        data-fancybox="photos">
+                        <img src="https://mebel-restoran.ru/images/virtuemart/product/crm_VYHlnPwSUYid.png" alt="">
+                      </a>
+                    </div>
+                  </div>
+                  <div class="swiper-pagination"></div>
+
+                </div>
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev d-none"></div>
+                <div class="swiper-button-next"></div>
+              </div>
+            </div>
+            <div class="col ps-5">
+              <div class="detail-preview__titles">
+                <h1 class="h1 m-0 detail-preview__title">Title sofa</h1>
+                <p class="text-gray detail-preview__price">₽. 250,000.00</p>
+                <p class="detail-preview__desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit
+                  ducimus
+                  explicabo error unde illo, dicta voluptatibus porro quam laborum ullam praesentium, recusandae esse
+                  accusantium optio vel asperiores voluptate aliquam corrupti.
+                </p>
+                <button class="btn detail-preview__like">
+                  <svg width="34" height="37" viewBox="0 0 34 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M9.91668 5.3916C6.00526 5.3916 2.83334 8.6633 2.83334 12.6998C2.83334 15.9582 4.07293 23.6915 16.2747 31.5091C16.4932 31.6477 16.7442 31.721 17 31.721C17.2559 31.721 17.5068 31.6477 17.7253 31.5091C29.9271 23.6915 31.1667 15.9582 31.1667 12.6998C31.1667 8.6633 27.9948 5.3916 24.0833 5.3916C20.1719 5.3916 17 9.82079 17 9.82079C17 9.82079 13.8281 5.3916 9.91668 5.3916Z"
+                      stroke="#E34E4E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                </button>
+              </div>
+              <form action="#" class="detail-preview__form">
+                <div class="detail-preview__label-wrap detail-preview__label-wrap_radio">
+                  <h4 class="text-gray detail-preview__label-title">Title</h4>
+                  <div class="detail-preview__radios detail-preview__radios_letters">
+                    <input type="radio" class="btn-check" name="size" id="option1" autocomplete="off" checked>
+                    <label class="radio-letter" for="option1">L</label>
+
+                    <input type="radio" class="btn-check" name="size" id="option2" autocomplete="off">
+                    <label class="radio-letter" for="option2">XL</label>
+
+                    <input type="radio" class="btn-check" name="size" id="option3" autocomplete="off" disabled>
+                    <label class="radio-letter" for="option3">S</label>
+
+                    <input type="radio" class="btn-check" name="size" id="option4" autocomplete="off">
+                    <label class="radio-letter" for="option4">M</label>
+                  </div>
+                </div>
+                <div class="detail-preview__label-wrap detail-preview__label-wrap_radio">
+                  <h4 class="text-gray detail-preview__label-title">Title</h4>
+                  <div class="detail-preview__radios detail-preview__radios_colors">
+                    <input type="radio" class="btn-check" name="colors" id="color1" autocomplete="off" checked>
+                    <label class="radio-color" for="color1"
+                      style="background-color: black; outline-color: black;"></label>
+
+                    <input type="radio" class="btn-check" name="colors" id="color2" autocomplete="off">
+                    <label class="radio-color" for="color2"
+                      style="background-color: green; outline-color: green;"></label>
+
+                    <input type="radio" class="btn-check" name="colors" id="color3" autocomplete="off" disabled>
+                    <label class="radio-color" for="color3"
+                      style="background-color: blue; outline-color: blue;"></label>
+
+                    <input type="radio" class="btn-check" name="colors" id="color4" autocomplete="off">
+                    <label class="radio-color" for="color4"
+                      style="background-color: brown; outline-color: brown;"></label>
+                  </div>
+                </div>
+                <div class="d-flex detail-preview__form-actions">
+                  <label class="me-2 detail-preview__label number-label">
+                    <button type="button"
+                      class="detail-preview__action detail-preview__action_minus js-number-input-minus">
+                      -
+                    </button>
+                    <input readonly class="js-number-input" type="number" name="count" value="1" min="1">
+                    <button type="button"
+                      class="detail-preview__action detail-preview__action_plus js-number-input-plus">
+                      +
+                    </button>
+                  </label>
+                  <button class="btn btn-secondary detail-preview__submit">В корзину</button>
+                </div>
+              </form>
+              <ul class="detail-preview__articles">
+                <div class="detail-preview__article-name">Артикул</div>
+                <div class="detail-preview__article-value">SS089</div>
+
+                <div class="detail-preview__article-name">Категория</div>
+                <div class="detail-preview__article-value">Sofas</div>
+
+                <div class="detail-preview__article-name">Tags</div>
+                <div class="detail-preview__article-value">Sofa, Chair, Home, Shop</div>
+
+                <div class="detail-preview__article-name">Share</div>
+                <ul class="row align-items-center detail-preview__article-value detail-preview__article-value_list">
+                  <li class="col-1">
+                    <a href="#" class="d-block btn-black_filter social">
+                      <svg class="text" width="20" height="20" viewBox="0 0 20 20" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_37_7229)">
+                          <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M-6.10352e-05 10.0558C-6.10352e-05 15.0275 3.61077 19.1617 8.33327 20V12.7775H5.83327V10H8.33327V7.7775C8.33327 5.2775 9.94411 3.88917 12.2224 3.88917C12.9441 3.88917 13.7224 4 14.4441 4.11083V6.66667H13.1666C11.9441 6.66667 11.6666 7.2775 11.6666 8.05583V10H14.3333L13.8891 12.7775H11.6666V20C16.3891 19.1617 19.9999 15.0283 19.9999 10.0558C19.9999 4.525 15.4999 0 9.99994 0C4.49994 0 -6.10352e-05 4.525 -6.10352e-05 10.0558Z"
+                            fill="black" />
+                        </g>
+                        <defs>
+                          <clipPath id="clip0_37_7229">
+                            <rect width="20" height="20" fill="white" />
+                          </clipPath>
+                        </defs>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="col-1">
+                    <a href="#" class="d-block btn-black_filter social">
+                      <svg class="text" width="20" height="20" viewBox="0 0 20 20" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_37_7233)">
+                          <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M0.833267 2.36504C0.833267 1.95882 0.994639 1.56923 1.28188 1.28199C1.56913 0.994748 1.95871 0.833376 2.36493 0.833376H17.6333C17.8346 0.833047 18.034 0.872428 18.2201 0.949265C18.4061 1.0261 18.5752 1.13888 18.7176 1.28116C18.8601 1.42343 18.973 1.5924 19.0501 1.77838C19.1271 1.96437 19.1667 2.16373 19.1666 2.36504V17.6334C19.1668 17.8347 19.1273 18.0341 19.0504 18.2202C18.9735 18.4063 18.8606 18.5754 18.7183 18.7178C18.5759 18.8602 18.4069 18.9732 18.2209 19.0502C18.0349 19.1272 17.8355 19.1668 17.6341 19.1667H2.36493C2.16372 19.1667 1.96448 19.1271 1.7786 19.05C1.59271 18.973 1.42383 18.8601 1.28159 18.7178C1.13935 18.5755 1.02654 18.4065 0.949619 18.2206C0.872695 18.0347 0.833158 17.8354 0.833267 17.6342V2.36504ZM8.08993 7.82338H10.5724V9.07004C10.9308 8.35338 11.8474 7.70838 13.2249 7.70838C15.8658 7.70838 16.4916 9.13588 16.4916 11.755V16.6067H13.8191V12.3517C13.8191 10.86 13.4608 10.0184 12.5508 10.0184C11.2883 10.0184 10.7633 10.9259 10.7633 12.3517V16.6067H8.08993V7.82338ZM3.5066 16.4925H6.17993V7.70838H3.5066V16.4917V16.4925ZM6.56243 4.84338C6.56747 5.07227 6.52674 5.29987 6.44263 5.5128C6.35852 5.72574 6.23273 5.91974 6.07263 6.0834C5.91253 6.24707 5.72135 6.3771 5.51031 6.46588C5.29928 6.55466 5.07263 6.60039 4.84368 6.60039C4.61473 6.60039 4.38809 6.55466 4.17706 6.46588C3.96602 6.3771 3.77484 6.24707 3.61474 6.0834C3.45464 5.91974 3.32885 5.72574 3.24473 5.5128C3.16062 5.29987 3.11989 5.07227 3.12493 4.84338C3.13483 4.39409 3.32026 3.96654 3.64151 3.65228C3.96276 3.33803 4.39429 3.16206 4.84368 3.16206C5.29308 3.16206 5.72461 3.33803 6.04586 3.65228C6.36711 3.96654 6.55254 4.39409 6.56243 4.84338Z"
+                            fill="black" />
+                        </g>
+                        <defs>
+                          <clipPath id="clip0_37_7233">
+                            <rect width="20" height="20" fill="white" />
+                          </clipPath>
+                        </defs>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="col-1">
+                    <a href="#" class="d-block btn-black_filter social">
+                      <svg class="text" width="25" height="25" viewBox="0 0 25 25" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M12.4999 1.5625C6.4599 1.5625 1.56244 6.45996 1.56244 12.5C1.56244 18.54 6.4599 23.4375 12.4999 23.4375C18.54 23.4375 23.4374 18.54 23.4374 12.5C23.4374 6.45996 18.54 1.5625 12.4999 1.5625ZM17.7563 9.80713C17.7636 9.92188 17.7636 10.0415 17.7636 10.1587C17.7636 13.7427 15.0341 17.8711 10.0463 17.8711C8.50824 17.8711 7.08246 17.4243 5.88129 16.6553C6.10101 16.6797 6.31097 16.6895 6.53558 16.6895C7.80512 16.6895 8.97211 16.2598 9.90228 15.5322C8.71088 15.5078 7.7099 14.7266 7.3681 13.6523C7.78558 13.7134 8.16156 13.7134 8.59125 13.6035C7.97779 13.4789 7.42639 13.1457 7.03074 12.6606C6.63509 12.1755 6.41958 11.5684 6.42084 10.9424V10.9082C6.77972 11.1108 7.20209 11.2354 7.64398 11.2524C7.2725 11.0049 6.96785 10.6695 6.75705 10.276C6.54624 9.88244 6.43579 9.443 6.43549 8.99658C6.43549 8.49121 6.56732 8.02979 6.80414 7.62939C7.48505 8.46762 8.33473 9.15318 9.29795 9.64152C10.2612 10.1299 11.3164 10.41 12.395 10.4639C12.0117 8.62061 13.3886 7.12891 15.0439 7.12891C15.8251 7.12891 16.5283 7.45605 17.0239 7.9834C17.6367 7.86865 18.2226 7.63916 18.7451 7.33154C18.5424 7.95898 18.1176 8.48877 17.5536 8.82324C18.1005 8.76465 18.6279 8.61328 19.1161 8.40088C18.7475 8.94287 18.2861 9.42383 17.7563 9.80713Z"
+                          fill="black" />
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <section class="similar">
+      <div class="content-container">
+        <div class="similar__content">
+          <h2 class="similar__title">Похожие товары</h2>
+          <div class="swiper similar__slider js-similar-slider">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide similar__slide">
+                <div class="product-card similar__card" aria-label="disabled">
+                  <a href="#" class="similar__slide">
+                    <div class="product-card__img-wrap">
+                      <img class="product-card__img"
+                        src="https://pvhmarket.ru/upload/resize_cache/webp/iblock/5c7/5c76a9e147922460739c1cd761c45e14.webp"
+                        alt="">
+                      <div class="not-available">
+                        <div class="text">нет в <br> наличии</div>
+                      </div>
+                    </div>
+                    <div class="product-card__text">
+                      <h5 class="product-card__title">Title of card</h5>
+                      <p class="product-card__price">$ 34.98</p>
+                    </div>
+                  </a>
+                  <span class="sticker sticker_vinous">30%</span>
+                </div>
+              </div>
+              <div class="swiper-slide similar__slide">
+                <div class="product-card similar__card">
+                  <a href="#" class="similar__slide">
+                    <div class="product-card__img-wrap">
+                      <img class="product-card__img"
+                        src="https://pvhmarket.ru/upload/resize_cache/webp/iblock/5c7/5c76a9e147922460739c1cd761c45e14.webp"
+                        alt="">
+
+                    </div>
+                    <div class="product-card__text">
+                      <h5 class="product-card__title">Title of card</h5>
+                      <p class="product-card__price">$ 34.98</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="swiper-slide similar__slide">
+                <div class="product-card similar__card">
+                  <a href="#" class="similar__slide">
+                    <div class="product-card__img-wrap">
+                      <img class="product-card__img"
+                        src="https://pvhmarket.ru/upload/resize_cache/webp/iblock/5c7/5c76a9e147922460739c1cd761c45e14.webp"
+                        alt="">
+
+                    </div>
+                    <div class="product-card__text">
+                      <h5 class="product-card__title">Title of card</h5>
+                      <p class="product-card__price">$ 34.98</p>
+                    </div>
+                  </a>
+                  <span class="sticker sticker_black sticker_signed">New</span>
+                </div>
+              </div>
+              <div class="swiper-slide similar__slide">
+                <div class="product-card similar__card" aria-label="disabled">
+                  <a href="#" class="similar__slide">
+                    <div class="product-card__img-wrap">
+                      <img class="product-card__img"
+                        src="https://pvhmarket.ru/upload/resize_cache/webp/iblock/5c7/5c76a9e147922460739c1cd761c45e14.webp"
+                        alt="">
+                      <div class="not-available">
+                        <div class="text">нет в <br> наличии</div>
+                      </div>
+                    </div>
+                    <div class="product-card__text">
+                      <h5 class="product-card__title">Title of card</h5>
+                      <p class="product-card__price">$ 34.98</p>
+                    </div>
+                  </a>
+                  <span class="sticker sticker_vinous">30%</span>
+                </div>
+              </div>
+              <div class="swiper-slide similar__slide">
+                <div class="product-card similar__card">
+                  <a href="#" class="similar__slide">
+                    <div class="product-card__img-wrap">
+                      <img class="product-card__img"
+                        src="https://pvhmarket.ru/upload/resize_cache/webp/iblock/5c7/5c76a9e147922460739c1cd761c45e14.webp"
+                        alt="">
+
+                    </div>
+                    <div class="product-card__text">
+                      <h5 class="product-card__title">Title of card</h5>
+                      <p class="product-card__price">$ 34.98</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="swiper-slide similar__slide">
+                <div class="product-card similar__card">
+                  <a href="#" class="similar__slide">
+                    <div class="product-card__img-wrap">
+                      <img class="product-card__img"
+                        src="https://pvhmarket.ru/upload/resize_cache/webp/iblock/5c7/5c76a9e147922460739c1cd761c45e14.webp"
+                        alt="">
+
+                    </div>
+                    <div class="product-card__text">
+                      <h5 class="product-card__title">Title of card</h5>
+                      <p class="product-card__price">$ 34.98</p>
+                    </div>
+                  </a>
+                  <span class="sticker sticker_black sticker_signed">New</span>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-button-prev btn-arrow btn-arrow_long btn-arrow_reverse"></div>
+            <div class="swiper-button-next btn-arrow btn-arrow_long"></div>
+
+          </div>
+          <button class="btn gray-round similar__more">Смотреть больше</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="similar last-section">
+      <div class="content-container">
+        <div class="similar__content">
+          <h2 class="similar__title">Похожие товары</h2>
+          <div class="swiper similar__slider js-similar-slider">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide similar__slide">
+                <div class="product-card similar__card" aria-label="disabled">
+                  <a href="#" class="similar__slide">
+                    <div class="product-card__img-wrap">
+                      <img class="product-card__img"
+                        src="https://pvhmarket.ru/upload/resize_cache/webp/iblock/5c7/5c76a9e147922460739c1cd761c45e14.webp"
+                        alt="">
+                      <div class="not-available">
+                        <div class="text">нет в <br> наличии</div>
+                      </div>
+                    </div>
+                    <div class="product-card__text">
+                      <h5 class="product-card__title">Title of card</h5>
+                      <p class="product-card__price">$ 34.98</p>
+                    </div>
+                  </a>
+                  <span class="sticker sticker_vinous">30%</span>
+                </div>
+              </div>
+              <div class="swiper-slide similar__slide">
+                <div class="product-card similar__card">
+                  <a href="#" class="similar__slide">
+                    <div class="product-card__img-wrap">
+                      <img class="product-card__img"
+                        src="https://pvhmarket.ru/upload/resize_cache/webp/iblock/5c7/5c76a9e147922460739c1cd761c45e14.webp"
+                        alt="">
+
+                    </div>
+                    <div class="product-card__text">
+                      <h5 class="product-card__title">Title of card</h5>
+                      <p class="product-card__price">$ 34.98</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="swiper-slide similar__slide">
+                <div class="product-card similar__card">
+                  <a href="#" class="similar__slide">
+                    <div class="product-card__img-wrap">
+                      <img class="product-card__img"
+                        src="https://pvhmarket.ru/upload/resize_cache/webp/iblock/5c7/5c76a9e147922460739c1cd761c45e14.webp"
+                        alt="">
+
+                    </div>
+                    <div class="product-card__text">
+                      <h5 class="product-card__title">Title of card</h5>
+                      <p class="product-card__price">$ 34.98</p>
+                    </div>
+                  </a>
+                  <span class="sticker sticker_black sticker_signed">New</span>
+                </div>
+              </div>
+              <div class="swiper-slide similar__slide">
+                <div class="product-card similar__card" aria-label="disabled">
+                  <a href="#" class="similar__slide">
+                    <div class="product-card__img-wrap">
+                      <img class="product-card__img"
+                        src="https://pvhmarket.ru/upload/resize_cache/webp/iblock/5c7/5c76a9e147922460739c1cd761c45e14.webp"
+                        alt="">
+                      <div class="not-available">
+                        <div class="text">нет в <br> наличии</div>
+                      </div>
+                    </div>
+                    <div class="product-card__text">
+                      <h5 class="product-card__title">Title of card</h5>
+                      <p class="product-card__price">$ 34.98</p>
+                    </div>
+                  </a>
+                  <span class="sticker sticker_vinous">30%</span>
+                </div>
+              </div>
+              <div class="swiper-slide similar__slide">
+                <div class="product-card similar__card">
+                  <a href="#" class="similar__slide">
+                    <div class="product-card__img-wrap">
+                      <img class="product-card__img"
+                        src="https://pvhmarket.ru/upload/resize_cache/webp/iblock/5c7/5c76a9e147922460739c1cd761c45e14.webp"
+                        alt="">
+
+                    </div>
+                    <div class="product-card__text">
+                      <h5 class="product-card__title">Title of card</h5>
+                      <p class="product-card__price">$ 34.98</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="swiper-slide similar__slide">
+                <div class="product-card similar__card">
+                  <a href="#" class="similar__slide">
+                    <div class="product-card__img-wrap">
+                      <img class="product-card__img"
+                        src="https://pvhmarket.ru/upload/resize_cache/webp/iblock/5c7/5c76a9e147922460739c1cd761c45e14.webp"
+                        alt="">
+
+                    </div>
+                    <div class="product-card__text">
+                      <h5 class="product-card__title">Title of card</h5>
+                      <p class="product-card__price">$ 34.98</p>
+                    </div>
+                  </a>
+                  <span class="sticker sticker_black sticker_signed">New</span>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-button-prev btn-arrow btn-arrow_long btn-arrow_reverse"></div>
+            <div class="swiper-button-next btn-arrow btn-arrow_long"></div>
+
+          </div>
+          <button class="btn gray-round similar__more">Смотреть больше</button>
+        </div>
+      </div>
+    </section>
+
+    <%= require('html-loader!../partials/footer.html').default %>
+</body>
+
+</html>

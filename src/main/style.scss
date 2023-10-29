@@ -1,0 +1,320 @@
+@import '../assets/styles/_mixin';
+@import '../assets/styles/custom-normalize';
+@import '../assets/styles/load-fonts.css';
+@import '../assets/styles/_variables';
+@import '../assets/styles/fancybox.css';
+@import '../assets/bootstrap/css/bootstrap.css';
+@import '../assets/styles/common';
+
+.hero {
+  &__slider {
+    height: 717px;
+    width: 100vw;
+  }
+  &__indicators {
+    
+  }
+  &__slides {
+    
+  }
+  &__slide-img {
+    position: absolute;
+    z-index: 0;
+    object-fit: cover;
+  }
+
+  &__caption {
+    position: relative;
+    padding-bottom: 116px;
+    padding-right: 56px;
+    pointer-events: none;
+    .card {
+      pointer-events: all;
+      max-width: 640px;
+      text-align: left;
+      background-color: var(--bs-white);
+    }
+    .card-body {
+      padding: 2rem;
+      padding-top: 4rem;
+    }
+  }
+  &__subtitle {
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 3px;
+  }
+  &__title {
+    font-size: 52px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 125%;
+  }
+  &__desc {
+    margin-bottom: 46px;
+    min-height: 52px;
+    font-size: 18px;
+    line-height: 133%;
+  }
+  &__btn {
+    padding: 24px 71px;
+  }
+}
+
+.offers {
+  padding-top: 96px;
+
+  &__title {
+    margin-bottom: 40px;
+    font-size: 46px;
+    font-weight: 400;
+    line-height: normal;
+  }
+  &__tabs {
+    margin-bottom: 40px;
+    gap: 20px;
+  }
+  &__tab {
+
+  }
+
+  &__slider {
+    // height: 353px;
+    width: 100%;
+    overflow-x: visible;
+  }
+  &__slide {
+    width: auto;
+  }
+  .captioned-card {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 353px;
+    aspect-ratio: 1 / 1;
+    // background-color: var(--bs-light);
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+    &__text {
+      position: absolute;
+      margin: 30px;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+      border-radius: 10px;
+      background: #FFF;
+    }
+    &__list {
+    }
+    &__name {
+      font-size: 14px;
+      color: var(--dark-light);
+    }
+    &__price {
+      font-size: 14px;
+      color: var(--dark-3);
+      line-height: 140%;
+      &_old {
+        color: var(--bs-gray);
+        text-decoration: line-through;
+      }
+      &_single {
+        border: 1px solid var(--bs-secondary);
+        padding: 3px 13px;
+        border-radius: 20px;
+        line-height: 1;
+      }
+    }
+
+    &_big {
+      width: 535px;
+      .captioned-card {
+        &__text {
+          padding: 28px 20px;
+        }
+        &__list {
+          &_prices {
+            display: flex;
+            flex-direction: column;
+            gap: 17px;
+            align-items: flex-end;
+          }
+        }
+        &__price {
+          border: 1px solid var(--bs-secondary);
+          padding: 3px 13px;
+          border-radius: 20px;
+          line-height: 1;
+          &_old {
+            position: relative;
+            margin-right: 13px;
+            color: var(--dark-3);
+            text-decoration: none;
+            &::after {
+              position: absolute;
+              content: '–';
+              top: 0;
+              bottom: 0;
+              right: -13px;
+              color: var(--dark-3);
+            }
+          }
+        }
+      } 
+    }
+  }
+  &__cards-big {
+    gap: 10px;
+    margin-top: 40px;
+  }
+}
+
+.beauty {
+  margin: 96px 0;
+  padding: 44px 0;
+  background-color: var(--bs-light);
+  &__content {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+  }
+  &__text {
+    grid-column: 1 / 5;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: flex-start;
+  }
+  &__slider-wrap {
+    overflow: hidden;
+    padding-right: 300px;
+    grid-column: span 8;
+    margin-left: 80px;
+    margin-right: calc((100vw - var(--page-width) + 200px) / 2 * -1);
+  }
+  &__slider {
+    width: 404px; 
+    // width: 100%;
+    height: 582px;
+    margin-left: 0;
+    overflow: visible;
+  }
+  &__pagination {
+    width: auto !important;
+    left: auto !important;
+    right: -24px !important;
+    bottom: 29px !important;
+    transform: translateX(100%);
+  }
+  .swiper-button-prev {
+    display: none;
+  }
+  .swiper-button-next {
+    right: -100%;
+    width: 48px;
+    height: 48px;
+    background-color: var(--bs-white);
+    border-radius: 100%;
+    border: 1px solid white;
+    filter: drop-shadow(0px 4px 14px rgba(0, 0, 0, 0.16));
+    transform: translateX(calc(50% + 24px));
+    @include transition;
+    &:after {
+      transform: translateX(2px);
+      font-size: 18px;
+      filter: brightness(0) invert(0);
+    }
+    &:hover {
+      border-color: black;
+    }
+  }
+  &__slide {
+    position: relative;
+    
+    @include transition;
+    height: 486px;
+
+    img {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .caption {
+      user-select: none;
+      pointer-events: none;
+      opacity: 0;
+      @include transition;
+      transition-duration: .5s;
+      position: absolute;
+      bottom: 24px;
+      left: 24px;
+      width: auto;
+      flex-direction: column;
+      gap: 8px;
+      padding: 32px;
+      padding-right: 42px;
+      padding-bottom: 8px;
+      background: rgba(255, 255, 255, 0.72);
+      backdrop-filter: blur(1.5px);
+      display: flex;
+      &__desc {
+        color: #616161;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 150%;
+      }
+      &__title {
+        color: var(--dark-light);
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 120%; 
+        max-width: min-content;
+      }
+      &__link {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        transform: translateX(100%);
+      }
+    }
+    &.swiper-slide-active {
+      height: 100%;
+      .caption {
+        user-select: auto;
+        pointer-events: all;
+        opacity: 1;
+      }
+    }
+
+
+  }
+  &__title {
+    color: #3A3A3A;
+    font-size: 35px;
+    font-weight: 700;
+    line-height: 120%;
+  }
+  &__desc {
+    color: #616161;
+    line-height: 150%;
+  }
+  &__more-btn {
+    padding: 12px 30px;
+    width: auto;
+  }
+}
+
+
+
+
+

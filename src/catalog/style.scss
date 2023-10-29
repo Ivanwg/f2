@@ -1,0 +1,94 @@
+@import '../assets/styles/_mixin';
+@import '../assets/styles/custom-normalize';
+@import '../assets/styles/load-fonts.css';
+@import '../assets/styles/_variables';
+@import '../assets/styles/fancybox.css';
+@import '../assets/bootstrap/css/bootstrap.css';
+@import '../assets/styles/common';
+
+
+.catalog {
+  &__title {
+    margin: 96px 0;
+    font-size: 48px;
+    font-weight: 400;
+    line-height: normal;
+  }
+  &__filter-title {
+    color: #222;
+    font-size: 23px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 146%;
+    margin-bottom: 30px;
+  }
+  &__f-list {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 12px;
+    &_categs {
+      
+    }
+    &_colors {
+      display: flex;
+      gap: 16px;
+    }
+    &_counted {
+      flex-direction: column;
+      gap: 12px;
+      .count {
+        font-size: 13px;
+      }
+    }
+    &_tags {
+      gap: 7px;
+    }
+  }
+  &__f-link {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 14px;
+  }
+  &__bottom-pagination {
+    margin-top: 60px;
+  }
+
+  &__content {
+    display: grid;
+    align-items: start;
+    grid-template-columns: 320px auto;
+    gap: 70px;
+    border-top: 1px solid #E6E6E6;
+    padding-top: 70px;
+  }
+  &__filters-column {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding-right: 40px;
+    border-right: 1px solid #E6E6E6;
+  }
+  &__tabs {
+    margin-bottom: 36px;
+  }
+  &__cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    column-gap: 36px;
+    row-gap: 30px;
+  }
+  &__filters {
+    margin-bottom: 80px;
+  }
+  &__displayed {
+    color: #777;
+    font-family: Circe;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 175%;
+  }
+}
+
+

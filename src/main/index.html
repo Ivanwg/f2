@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="title" content="">
+  <meta name="description" content="">
+
+  <title></title>
+
+</head>
+
+<body>
+  <%= require('html-loader!../partials/header.html').default %>
+
+    <section class="hero">
+      <div id="carouselHero" class="carousel carousel-dark slide hero__slider" data-bs-ride="carousel"
+        data-bs-interval="4000"
+        data-plugin-options="{&quot;keyboard&quot;:true,&quot;type&quot;:&quot;main_banner&quot;,&quot;loop&quot;:true}">
+        <div class="carousel-indicators hero__indicators">
+          <button type="button" data-bs-target="#carouselHero" data-bs-slide-to="0" class="indicator active"
+            aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselHero" data-bs-slide-to="1" class="indicator"
+            aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselHero" data-bs-slide-to="2" class="indicator"
+            aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner h-100 hero__slides">
+          <div class="carousel-item h-100 active hero__slide">
+            <img src="https://ldesign.studio/wp-content/uploads/2020/10/design-v-svetlix-tonax2.jpg"
+              class="d-block w-100 h-100 hero__slide-img" alt="">
+            <div
+              class="container carousel-caption h-100 align-items-end justify-content-end w-100 hero__caption d-none d-md-flex">
+              <div class="card">
+                <div class="card-body">
+                  <span class="mb-1 d-block text-dark-3 hero__subtitle">Новая коллекция</span>
+                  <h2 class="mb-3 card-title hero__title">Домашняя коллекция “ЭКО”</h2>
+                  <p class="card-text text-dark-3 hero__desc">Соберите свой уют с нашей коллекцией для дома.</p>
+                  <a href="#" class="btn btn-primary fw-bold hero__btn">Купить</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item h-100 hero__slide">
+            <img src="https://roomester.ru/wp-content/uploads/2018/01/dizajn-kvartiry-v-svetlyh-tonah.jpg"
+              class="d-block w-100 h-100 hero__slide-img" alt="">
+            <div
+              class="container carousel-caption h-100 align-items-end justify-content-end w-100 hero__caption d-none d-md-flex">
+              <div class="card">
+                <div class="card-body">
+                  <span class="mb-1 d-block text-dark-3 hero__subtitle">Новая коллекция</span>
+                  <h2 class="mb-3 card-title hero__title">Домашняя коллекция “ЭКО”</h2>
+                  <p class="card-text text-dark-3 hero__desc">Соберите свой уют с нашей коллекцией для дома. Lorem ipsum
+                    dolor sit amet consectetur adipisicing elit. Quibusdam unde autem odit magnam ullam atque corrupti,
+                    voluptas rem et dolorum officiis minima officia temporibus suscipit reprehenderit accusantium.
+                    Vitae, voluptates adipisci!</p>
+                  <a href="#" class="btn btn-primary fw-bold hero__btn">Купить</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item h-100 hero__slide">
+            <img src="https://roomester.ru/wp-content/uploads/2018/01/dizajn-kvartiry-v-svetlyh-tonah.jpg"
+              class="d-block w-100 h-100 hero__slide-img" alt="">
+            <div
+              class="container carousel-caption h-100 align-items-end justify-content-end w-100 hero__caption d-none d-md-flex">
+              <div class="card">
+                <div class="card-body">
+                  <span class="mb-1 d-block text-dark-3 hero__subtitle">Новая коллекция</span>
+                  <h2 class="mb-3 card-title hero__title">Домашняя коллекция “ЭКО”</h2>
+                  <p class="card-text text-dark-3 hero__desc">Соберите свой уют с нашей коллекцией для дома.</p>
+                  <a href="#" class="btn btn-primary fw-bold hero__btn">Купить</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev d-none" type="button" data-bs-target="#carouselHero" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Предыдущий</span>
+        </button>
+        <button class="carousel-control-next d-none" type="button" data-bs-target="#carouselHero" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Следующий</span>
+        </button>
+      </div>
+    </section>
+
+    <section class="offers">
+      <div class="content-container">
+        <h2 class="text-dark-3 offers__title">Все для вас и вашего дома</h2>
+        <ul class="d-flex offers__tabs">
+          <li>
+            <a href="#" class="btn btn-gray tab active">
+              <span class="text">
+                Для дома
+              </span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="btn btn-gray tab">
+              <span class="text">
+                Канцелярия
+              </span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="btn btn-gray tab">
+              <span class="text">
+                Посуда
+              </span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="btn btn-gray tab">
+              <span class="text">
+                Аксессуары
+              </span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="btn btn-gray tab">
+              <span class="text">
+                Уход за собой
+              </span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="btn btn-gray tab">
+              <span class="text">
+                Коллаборации
+              </span>
+            </a>
+          </li>
+        </ul>
+        <div class="swiper offers__slider js-offers-slider">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide offers__slide">
+              <div class="captioned-card offers__card">
+                <img
+                  src="https://pvhmarket.ru/upload/resize_cache/webp/iblock/5c7/5c76a9e147922460739c1cd761c45e14.webp"
+                  alt="">
+                <div class="captioned-card__text">
+                  <ul class="captioned-card__list captioned-card__list_names">
+                    <li class="captioned-card__name">Some name</li>
+                    <li class="captioned-card__name">Some name</li>
+                  </ul>
+                  <ul class="captioned-card__list captioned-card__list_prices">
+                    <li class="price-round captioned-card__price captioned-card__price_old">$ 232</li>
+                    <li class="price-round captioned-card__price">$ 199</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide offers__slide">
+              <div class="captioned-card offers__card">
+                <img
+                  src="https://pvhmarket.ru/upload/resize_cache/webp/iblock/5c7/5c76a9e147922460739c1cd761c45e14.webp"
+                  alt="">
+                <div class="captioned-card__text">
+                  <ul class="captioned-card__list captioned-card__list_names">
+                    <li class="captioned-card__name">Some name</li>
+                    <li class="captioned-card__name">Some name</li>
+                  </ul>
+                  <ul class="captioned-card__list captioned-card__list_prices">
+                    <li class="price-round captioned-card__price captioned-card__price_single">$ 232</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide offers__slide">
+              <div class="captioned-card offers__card">
+                <img
+                  src="https://pvhmarket.ru/upload/resize_cache/webp/iblock/5c7/5c76a9e147922460739c1cd761c45e14.webp"
+                  alt="">
+                <div class="captioned-card__text">
+                  <ul class="captioned-card__list captioned-card__list_names">
+                    <li class="captioned-card__name">Some name</li>
+                    <li class="captioned-card__name">Some name</li>
+                  </ul>
+                  <ul class="captioned-card__list captioned-card__list_prices">
+                    <li class="price-round captioned-card__price captioned-card__price_old">$ 232</li>
+                    <li class="price-round captioned-card__price">$ 199</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide offers__slide">
+              <div class="captioned-card offers__card">
+                <img
+                  src="https://pvhmarket.ru/upload/resize_cache/webp/iblock/5c7/5c76a9e147922460739c1cd761c45e14.webp"
+                  alt="">
+                <div class="captioned-card__text">
+                  <ul class="captioned-card__list captioned-card__list_names">
+                    <li class="captioned-card__name">Some name</li>
+                    <li class="captioned-card__name">Some name</li>
+                  </ul>
+                  <ul class="captioned-card__list captioned-card__list_prices">
+                    <li class="price-round captioned-card__price captioned-card__price_single">$ 232</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide offers__slide">
+              <div class="captioned-card offers__card">
+                <img
+                  src="https://pvhmarket.ru/upload/resize_cache/webp/iblock/5c7/5c76a9e147922460739c1cd761c45e14.webp"
+                  alt="">
+                <div class="captioned-card__text">
+                  <ul class="captioned-card__list captioned-card__list_names">
+                    <li class="captioned-card__name">Some name</li>
+                    <li class="captioned-card__name">Some name</li>
+                  </ul>
+                  <ul class="captioned-card__list captioned-card__list_prices">
+                    <li class="price-round captioned-card__price captioned-card__price_old">$ 232</li>
+                    <li class="price-round captioned-card__price">$ 199</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide offers__slide">
+              <div class="captioned-card offers__card">
+                <img
+                  src="https://pvhmarket.ru/upload/resize_cache/webp/iblock/5c7/5c76a9e147922460739c1cd761c45e14.webp"
+                  alt="">
+                <div class="captioned-card__text">
+                  <ul class="captioned-card__list captioned-card__list_names">
+                    <li class="captioned-card__name">Some name</li>
+                    <li class="captioned-card__name">Some name</li>
+                  </ul>
+                  <ul class="captioned-card__list captioned-card__list_prices">
+                    <li class="price-round captioned-card__price captioned-card__price_single">$ 232</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <ul class="d-flex justify-content-center offers__cards-big">
+          <li>
+            <div class="captioned-card captioned-card_big offers__card">
+              <img src="https://pvhmarket.ru/upload/resize_cache/webp/iblock/5c7/5c76a9e147922460739c1cd761c45e14.webp"
+                alt="">
+              <div class="captioned-card__text">
+                <ul class="captioned-card__list captioned-card__list_names">
+                  <li class="captioned-card__name">Some name</li>
+                </ul>
+                <ul class="captioned-card__list captioned-card__list_prices">
+                  <li class="price-round captioned-card__price captioned-card__price_old">$ 232</li>
+                  <li class="price-round captioned-card__price">$ 199</li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="captioned-card captioned-card_big offers__card">
+              <img src="https://pvhmarket.ru/upload/resize_cache/webp/iblock/5c7/5c76a9e147922460739c1cd761c45e14.webp"
+                alt="">
+              <div class="captioned-card__text">
+                <ul class="captioned-card__list captioned-card__list_names">
+                  <li class="captioned-card__name">Some name</li>
+                </ul>
+                <ul class="captioned-card__list captioned-card__list_prices">
+                  <li class="price-round captioned-card__price">$ 199</li>
+                </ul>
+              </div>
+            </div>
+          </li>
+        </ul>
+    </section>
+
+    <section class="beauty">
+      <div class="content-container">
+        <div class="beauty__content">
+          <div class="beauty__text">
+            <h3 class="beauty__title">
+              50+ красивых наборов вдохновения
+            </h3>
+            <p class="beauty__desc">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam molestias minus facere non pariatur, cumque
+              aperiam soluta reiciendis culpa autem ea voluptatum natus eaque aliquam odio. Excepturi beatae rerum
+              blanditiis.
+            </p>
+            <button class="btn btn-primary beauty__more-btn">Посмотреть все</button>
+          </div>
+          <div class="beauty__slider-wrap">
+            <div class="swiper beauty__slider" id="js-beauty-slider">
+              <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide beauty__slide">
+                  <img src="https://ldesign.studio/wp-content/uploads/2020/10/design-v-svetlix-tonax2.jpg" alt="">
+                  <div class="caption">
+                    <div class="caption__desc">01 — Аксессуары</div>
+                    <h4 class="caption__title">
+                      Сумки шоппер
+                    </h4>
+                    <a href="#" class="btn btn-arrow caption__link"></a>
+                  </div>
+                </div>
+                <div class="swiper-slide beauty__slide">
+                  <img src="https://ldesign.studio/wp-content/uploads/2020/10/design-v-svetlix-tonax2.jpg" alt="">
+                  <div class="caption">
+                    <div class="caption__desc">01 — Аксессуары</div>
+                    <h4 class="caption__title">
+                      Сумки шоппер
+                    </h4>
+                    <a href="#" class="btn btn-arrow caption__link"></a>
+                  </div>
+                </div>
+                <div class="swiper-slide beauty__slide">
+                  <img src="https://ldesign.studio/wp-content/uploads/2020/10/design-v-svetlix-tonax2.jpg" alt="">
+                  <div class="caption">
+                    <div class="caption__desc">01 — Аксессуары</div>
+                    <h4 class="caption__title">
+                      Сумки шоппер
+                    </h4>
+                    <a href="#" class="btn btn-arrow caption__link"></a>
+                  </div>
+                </div>
+              </div>
+              <!-- pagination -->
+              <div class="swiper-pagination beauty__pagination"></div>
+
+              <!-- navigation buttons -->
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+    </section>
+
+    <section class="offers last-section_big">
+      <div class="content-container">
+        <h2 class="text-dark-3 offers__title">Все для вас и вашего дома</h2>
+        <ul class="d-flex offers__tabs">
+          <li>
+            <a href="#" class="btn btn-gray tab active">
+              <span class="text">
+                Для дома
+              </span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="btn btn-gray tab">
+              <span class="text">
+                Канцелярия
+              </span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="btn btn-gray tab">
+              <span class="text">
+                Посуда
+              </span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="btn btn-gray tab">
+              <span class="text">
+                Аксессуары
+              </span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="btn btn-gray tab">
+              <span class="text">
+                Уход за собой
+              </span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="btn btn-gray tab">
+              <span class="text">
+                Коллаборации
+              </span>
+            </a>
+          </li>
+        </ul>
+        <div class="swiper offers__slider js-offers-slider">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide offers__slide">
+              <div class="captioned-card offers__card">
+                <img
+                  src="https://pvhmarket.ru/upload/resize_cache/webp/iblock/5c7/5c76a9e147922460739c1cd761c45e14.webp"
+                  alt="">
+                <div class="captioned-card__text">
+                  <ul class="captioned-card__list captioned-card__list_names">
+                    <li class="captioned-card__name">Some name</li>
+                    <li class="captioned-card__name">Some name</li>
+                  </ul>
+                  <ul class="captioned-card__list captioned-card__list_prices">
+                    <li class="price-round captioned-card__price captioned-card__price_old">$ 232</li>
+                    <li class="price-round captioned-card__price">$ 199</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide offers__slide">
+              <div class="captioned-card offers__card">
+                <img
+                  src="https://pvhmarket.ru/upload/resize_cache/webp/iblock/5c7/5c76a9e147922460739c1cd761c45e14.webp"
+                  alt="">
+                <div class="captioned-card__text">
+                  <ul class="captioned-card__list captioned-card__list_names">
+                    <li class="captioned-card__name">Some name</li>
+                    <li class="captioned-card__name">Some name</li>
+                  </ul>
+                  <ul class="captioned-card__list captioned-card__list_prices">
+                    <li class="price-round captioned-card__price captioned-card__price_single">$ 232</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide offers__slide">
+              <div class="captioned-card offers__card">
+                <img
+                  src="https://pvhmarket.ru/upload/resize_cache/webp/iblock/5c7/5c76a9e147922460739c1cd761c45e14.webp"
+                  alt="">
+                <div class="captioned-card__text">
+                  <ul class="captioned-card__list captioned-card__list_names">
+                    <li class="captioned-card__name">Some name</li>
+                    <li class="captioned-card__name">Some name</li>
+                  </ul>
+                  <ul class="captioned-card__list captioned-card__list_prices">
+                    <li class="price-round captioned-card__price captioned-card__price_old">$ 232</li>
+                    <li class="price-round captioned-card__price">$ 199</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide offers__slide">
+              <div class="captioned-card offers__card">
+                <img
+                  src="https://pvhmarket.ru/upload/resize_cache/webp/iblock/5c7/5c76a9e147922460739c1cd761c45e14.webp"
+                  alt="">
+                <div class="captioned-card__text">
+                  <ul class="captioned-card__list captioned-card__list_names">
+                    <li class="captioned-card__name">Some name</li>
+                    <li class="captioned-card__name">Some name</li>
+                  </ul>
+                  <ul class="captioned-card__list captioned-card__list_prices">
+                    <li class="price-round captioned-card__price captioned-card__price_single">$ 232</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide offers__slide">
+              <div class="captioned-card offers__card">
+                <img
+                  src="https://pvhmarket.ru/upload/resize_cache/webp/iblock/5c7/5c76a9e147922460739c1cd761c45e14.webp"
+                  alt="">
+                <div class="captioned-card__text">
+                  <ul class="captioned-card__list captioned-card__list_names">
+                    <li class="captioned-card__name">Some name</li>
+                    <li class="captioned-card__name">Some name</li>
+                  </ul>
+                  <ul class="captioned-card__list captioned-card__list_prices">
+                    <li class="price-round captioned-card__price captioned-card__price_old">$ 232</li>
+                    <li class="price-round captioned-card__price">$ 199</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide offers__slide">
+              <div class="captioned-card offers__card">
+                <img
+                  src="https://pvhmarket.ru/upload/resize_cache/webp/iblock/5c7/5c76a9e147922460739c1cd761c45e14.webp"
+                  alt="">
+                <div class="captioned-card__text">
+                  <ul class="captioned-card__list captioned-card__list_names">
+                    <li class="captioned-card__name">Some name</li>
+                    <li class="captioned-card__name">Some name</li>
+                  </ul>
+                  <ul class="captioned-card__list captioned-card__list_prices">
+                    <li class="price-round captioned-card__price captioned-card__price_single">$ 232</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <ul class="d-flex justify-content-center offers__cards-big">
+          <li>
+            <div class="captioned-card captioned-card_big offers__card">
+              <img src="https://pvhmarket.ru/upload/resize_cache/webp/iblock/5c7/5c76a9e147922460739c1cd761c45e14.webp"
+                alt="">
+              <div class="captioned-card__text">
+                <ul class="captioned-card__list captioned-card__list_names">
+                  <li class="captioned-card__name">Some name</li>
+                </ul>
+                <ul class="captioned-card__list captioned-card__list_prices">
+                  <li class="price-round captioned-card__price captioned-card__price_old">$ 232</li>
+                  <li class="price-round captioned-card__price">$ 199</li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="captioned-card captioned-card_big offers__card">
+              <img src="https://pvhmarket.ru/upload/resize_cache/webp/iblock/5c7/5c76a9e147922460739c1cd761c45e14.webp"
+                alt="">
+              <div class="captioned-card__text">
+                <ul class="captioned-card__list captioned-card__list_names">
+                  <li class="captioned-card__name">Some name</li>
+                </ul>
+                <ul class="captioned-card__list captioned-card__list_prices">
+                  <li class="price-round captioned-card__price">$ 199</li>
+                </ul>
+              </div>
+            </div>
+          </li>
+        </ul>
+    </section>
+
+    <%= require('html-loader!../partials/footer.html').default %>
+</body>
+
+</html>

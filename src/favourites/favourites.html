@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="title" content="">
+  <meta name="description" content="">
+
+  <title></title>
+
+</head>
+
+<body>
+  <%= require('html-loader!../partials/header.html').default %>
+
+    <section class="favourites last-section">
+      <div class="big-padding-container">
+        <h1 class="favourites__title">Избранные</h1>
+
+      </div>
+      <div class="favourites__content">
+        <div class="big-padding-container">
+          <ul class="d-flex favourites__tabs">
+            <li>
+              <a href="#" class="btn btn-gray tab tab_bottom active">
+                <span class="text">
+                  Все
+                </span>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="btn btn-gray tab tab_bottom">
+                <span class="text">
+                  Канцелярия
+                </span>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="btn btn-gray tab tab_bottom">
+                <span class="text">
+                  Посуда
+                </span>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="btn btn-gray tab tab_bottom">
+                <span class="text">
+                  Аксессуары
+                </span>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="btn btn-gray tab tab_bottom">
+                <span class="text">
+                  Уход за собой
+                </span>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="btn btn-gray tab tab_bottom">
+                <span class="text">
+                  Коллаборации
+                </span>
+              </a>
+            </li>
+          </ul>
+          <div class="d-flex align-items-center justify-content-between favourites__filters">
+            <p class="favourites__displayed">
+              Показано 1–12 of 18 результатов
+            </p>
+            <div class="d-flex align-items-center justify-content-center filters">
+              <div class="d-flex align-items-center pagination">
+                <span class="me-2">Показать</span>
+                <div class="d-flex align-items-center pagination__list">
+                  <a href="#" class="tab tab_bottom active">
+                    <span class="text">12</span>
+                  </a>
+                  <a href="#" class="tab tab_bottom">
+                    <span class="text">15</span>
+                  </a>
+                  <a href="#" class="tab tab_bottom">
+                    <span class="text">16</span>
+                  </a>
+                </div>
+              </div>
+              <div class="btn-group sort-dropdown">
+                <button class="btn gray-round btn-lg dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Сортировка
+                </button>
+                <ul class="dropdown-menu w-100">
+                  <li>
+                    <a href="#" class="dropdown-item">Параметр</a>
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown-item">Параметр</a>
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown-item">Параметр</a>
+                  </li>
+                </ul>
+              </div>
+  
+              <div class="d-flex align-items-center change-grid-btns">
+                <a href="#" class="grid-btn active">
+                  <svg width="56" height="44" viewBox="0 0 56 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="27.718" cy="22.5" r="21.5" fill="" stroke="transparent" />
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M17.218 12H25.6391V20.4211H17.218V12ZM28.797 12H37.218V20.4211H28.797V12ZM28.797 23.5789H37.218V32H28.797V23.5789ZM17.218 23.5789H25.6391V32H17.218V23.5789Z"
+                      stroke="black" />
+                  </svg>
+                </a>
+                <a href="#" class="grid-btn">
+                  <svg width="55" height="44" viewBox="0 0 55 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="27.2822" cy="21.5" r="21" stroke="transparent"/>
+                    <path d="M29.7822 13H37.7822M29.7822 18H37.7822M29.7822 26H37.7822M29.7822 31H37.7822M24.7822 12H17.7822V19H24.7822V12ZM24.7822 25H17.7822V32H24.7822V25Z" stroke="black" stroke-miterlimit="10" stroke-linecap="square"/>
+                  </svg>                  
+                </a>
+              </div>
+            </div>
+
+          </div>
+          <div class="favourites__cards">
+            <div class="favourites__slide">
+              <div class="product-card favourites__card" aria-label="disabled">
+                <a href="#" class="favourites__slide">
+                  <div class="product-card__img-wrap">
+                    <img class="product-card__img"
+                      src="https://pvhmarket.ru/upload/resize_cache/webp/iblock/5c7/5c76a9e147922460739c1cd761c45e14.webp"
+                      alt="">
+                    <div class="not-available">
+                      <div class="text">нет в <br> наличии</div>
+                    </div>
+                  </div>
+                  <div class="product-card__text">
+                    <h5 class="product-card__title">Title of card</h5>
+                    <p class="product-card__price">$ 34.98</p>
+                  </div>
+                  <button class="btn btn-secondary product-card__delete">Удалить</button>
+                </a>
+                <span class="sticker sticker_vinous">30%</span>
+              </div>
+            </div>
+            <div class="favourites__slide">
+              <div class="product-card favourites__card">
+                <a href="#" class="favourites__slide">
+                  <div class="product-card__img-wrap">
+                    <img class="product-card__img"
+                      src="https://pvhmarket.ru/upload/resize_cache/webp/iblock/5c7/5c76a9e147922460739c1cd761c45e14.webp"
+                      alt="">
+
+                  </div>
+                  <div class="product-card__text">
+                    <h5 class="product-card__title">Title of card</h5>
+                    <p class="product-card__price">$ 34.98</p>
+                  </div>
+                  <button class="btn btn-secondary product-card__delete">Удалить</button>
+                </a>
+              </div>
+            </div>
+            <div class="favourites__slide">
+              <div class="product-card favourites__card">
+                <a href="#" class="favourites__slide">
+                  <div class="product-card__img-wrap">
+                    <img class="product-card__img"
+                      src="https://pvhmarket.ru/upload/resize_cache/webp/iblock/5c7/5c76a9e147922460739c1cd761c45e14.webp"
+                      alt="">
+
+                  </div>
+                  <div class="product-card__text">
+                    <h5 class="product-card__title">Title of card</h5>
+                    <p class="product-card__price">$ 34.98</p>
+                  </div>
+                  <button class="btn btn-secondary product-card__delete">Удалить</button>
+                </a>
+                <span class="sticker sticker_orange sticker_signed">New</span>
+              </div>
+            </div>
+            <div class="favourites__slide">
+              <div class="product-card favourites__card" aria-label="disabled">
+                <a href="#" class="favourites__slide">
+                  <div class="product-card__img-wrap">
+                    <img class="product-card__img"
+                      src="https://pvhmarket.ru/upload/resize_cache/webp/iblock/5c7/5c76a9e147922460739c1cd761c45e14.webp"
+                      alt="">
+                    <div class="not-available">
+                      <div class="text">нет в <br> наличии</div>
+                    </div>
+                  </div>
+                  <div class="product-card__text">
+                    <h5 class="product-card__title">Title of card</h5>
+                    <p class="product-card__price">$ 34.98</p>
+                  </div>
+                  <button class="btn btn-secondary product-card__delete">Удалить</button>
+                </a>
+                <span class="sticker sticker_vinous">30%</span>
+              </div>
+            </div>
+            <div class="favourites__slide">
+              <div class="product-card favourites__card">
+                <a href="#" class="favourites__slide">
+                  <div class="product-card__img-wrap">
+                    <img class="product-card__img"
+                      src="https://pvhmarket.ru/upload/resize_cache/webp/iblock/5c7/5c76a9e147922460739c1cd761c45e14.webp"
+                      alt="">
+
+                  </div>
+                  <div class="product-card__text">
+                    <h5 class="product-card__title">Title of card</h5>
+                    <p class="product-card__price">$ 34.98</p>
+                  </div>
+                  <button class="btn btn-secondary product-card__delete">Удалить</button>
+                </a>
+              </div>
+            </div>
+            <div class="favourites__slide">
+              <div class="product-card favourites__card">
+                <a href="#" class="favourites__slide">
+                  <div class="product-card__img-wrap">
+                    <img class="product-card__img"
+                      src="https://pvhmarket.ru/upload/resize_cache/webp/iblock/5c7/5c76a9e147922460739c1cd761c45e14.webp"
+                      alt="">
+
+                  </div>
+                  <div class="product-card__text">
+                    <h5 class="product-card__title">Title of card</h5>
+                    <p class="product-card__price">$ 34.98</p>
+                  </div>
+                  <button class="btn btn-secondary product-card__delete">Удалить</button>
+                </a>
+                <span class="sticker sticker_orange sticker_signed">New</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <%= require('html-loader!../partials/footer.html').default %>
+</body>
+
+</html>
