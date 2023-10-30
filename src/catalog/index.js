@@ -4,4 +4,4 @@ import './style.scss';
 
 import '../assets/js/fancybox.umd';
 
-// import './script.js';
+import './script.js';

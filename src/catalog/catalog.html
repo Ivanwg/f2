@@ -43,7 +43,22 @@
             </div>
             <div class="catalog__prices">
               <h4 class="catalog__filter-title">Цена</h4>
-              <input id="ex1" data-slider-id='ex1Slider' type="text" data-slider-min="0" data-slider-max="20" data-slider-step="1" data-slider-value="14"/>
+              <div class="slider-area">
+                <div class="slider-area-wrapper">
+                  <div id="skipstep" class="slider"></div>
+                </div>
+                <div class="d-flex my-3">
+                  <p class="price me-4">
+                    Min Price: 
+                    <span id="skip-value-lower"></span> 
+                  </p>
+                  <p class="price">
+                    Min Price: 
+                    <span id="skip-value-upper"></span>
+                  </p>
+                </div>
+              </div>
+              
             </div>
             <div class="catalog__colors">
               <h4 class="catalog__filter-title">Цвет</h4>

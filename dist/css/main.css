@@ -12311,6 +12311,82 @@ input:hover, input:active, input:focus, input:focus-visible {
   color: #777;
 }
 
+.slider-area {
+  width: 100%;
+  padding: 0 6px;
+}
+.slider-area-wrapper {
+  display: block;
+  width: 100%;
+}
+.slider-area .price {
+  color: #777;
+  font-size: 14px;
+  white-space: nowrap;
+}
+.slider-area #skip-value-lower,
+.slider-area #skip-value-upper {
+  color: black;
+}
+.slider-area .noUi-target {
+  flex: 1;
+  position: relative;
+  background: #e3e3e3;
+  border-radius: 3px;
+}
+.slider-area .noUi-target.noUi-horizontal {
+  height: 3px;
+}
+.slider-area .noUi-target .noUi-base,
+.slider-area .noUi-target .noUi-connects {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  z-index: 1;
+}
+.slider-area .noUi-target .noUi-connects {
+  border-radius: 3px;
+  overflow: hidden;
+  z-index: 0;
+}
+.slider-area .noUi-target .noUi-connects .noUi-connect {
+  height: 3px;
+  width: 100%;
+  transform-style: preserve-3d;
+  transform-origin: 0 0;
+  transform-style: flat;
+  background-color: black;
+}
+.slider-area .noUi-target .noUi-origin {
+  will-change: transform;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  height: 0;
+  width: 100%;
+}
+.slider-area .noUi-target .noUi-origin .noUi-handle {
+  border-radius: 50px;
+  background: #fff;
+  cursor: pointer;
+  background-color: white;
+  backface-visibility: hidden;
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  right: -10px;
+  top: -5px;
+  border: 4px solid var(--bs-gray);
+}
+.slider-area .noUi-target .noUi-origin .noUi-handle .noUi-touch-area {
+  height: 100%;
+  width: 100%;
+}
+.slider-area .noUi-draggable {
+  cursor: pointer;
+}
+
 .header {
   position: relative;
 }
