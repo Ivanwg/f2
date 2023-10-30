@@ -8,3 +8,23 @@
     padding-right: 3rem;
   }
 }
+
+.form-modal {
+  z-index: 2;
+  padding: 30px;
+  width: 344px;
+  background-color: white;
+  input[type='password'] {
+    padding-right: 30px;
+  }
+  .eye {
+    color: var(--bs-gray);
+    right: 17px;
+    width: 18px;
+    height: 18px;
+    transition-duration: .2;
+    &:hover {
+      color: var(--bs-dark);
+    }
+  }
+}
