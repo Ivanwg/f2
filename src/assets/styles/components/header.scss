@@ -7,24 +7,48 @@
   &__logo {
     padding-right: 3rem;
   }
+
+  .offcanvas-end {
+    // bottom: auto !important;
+  }
 }
 
 .form-modal {
   z-index: 2;
-  padding: 30px;
   width: 344px;
+  padding-top: 30px;
   background-color: white;
-  input[type='password'] {
+  .input-password {
     padding-right: 30px;
   }
-  .eye {
+  .eye-btn {
+    position: relative;
     color: var(--bs-gray);
     right: 17px;
     width: 18px;
     height: 18px;
-    transition-duration: .2;
+    transition-duration: .2s;
+
+    &.eye-slash {
+      &:after {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        display: block;
+        width: 18px;
+        height: 10px;
+        content: '';
+        border-top: 2px solid var(--bs-gray);
+        transform: rotate(-45deg) translate(1px, -2px);
+        transform-origin: center center;
+        @include transition;
+      }
+    }
     &:hover {
       color: var(--bs-dark);
+      &::after {
+        border-color: black;
+      }
     }
   }
 }

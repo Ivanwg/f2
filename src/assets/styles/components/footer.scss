@@ -43,34 +43,7 @@
     }
 
     &__submit {
-      font-size: 14px;
-      @include transition;
-      .text {
-        position: relative;
-        &::before {
-          position: absolute;
-          content: '';
-          display: block;
-          left: 0;
-          right: 0;
-          bottom: -1.3px;
-          border-bottom: 1px solid var(--bs-dark);
-          transform-origin: left center;
-        }
-      }
-      &:hover {
-        .text::before {
-          animation: go .4s ease forwards;
-        }
-      }
-      &:active {
-        color: var(--bs-gray);
-        .text {
-          &::before {
-            border-color: var(--bs-gray);
-          }
-        }
-      }
+
     }
   }
 

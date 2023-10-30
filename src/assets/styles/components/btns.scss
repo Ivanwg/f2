@@ -59,6 +59,39 @@
   }
 }
 
+.black-b-border {
+  font-size: 14px;
+  color: black;
+  @include transition;
+  .text {
+    position: relative;
+    &::before {
+      position: absolute;
+      content: '';
+      display: block;
+      left: 0;
+      right: 0;
+      bottom: -1.3px;
+      border-bottom: 1px solid var(--bs-dark);
+      transform-origin: left center;
+    }
+  }
+  &:hover {
+    color: black;
+    .text::before {
+      animation: go .4s ease forwards;
+    }
+  }
+  &:active {
+    color: var(--bs-gray);
+    .text {
+      &::before {
+        border-color: var(--bs-gray);
+      }
+    }
+  }
+}
+
 .btn-gray {
   color: var(--bs-gray);
   @include transition;
