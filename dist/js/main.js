@@ -15306,8 +15306,8 @@ _global["default"]._babelPolyfill = true;
 (() => {
 "use strict";
 
-;// CONCATENATED MODULE: ./src/assets/img/icons/logo.svg
-const logo_namespaceObject = __webpack_require__.p + "img/logo.svg";
+;// CONCATENATED MODULE: ./src/assets/img/icons/logo.png
+const logo_namespaceObject = __webpack_require__.p + "img/logo.png";
 // EXTERNAL MODULE: ./src/assets/bootstrap/js/bootstrap.bundle.js
 var bootstrap_bundle = __webpack_require__(6662);
 // EXTERNAL MODULE: ./src/assets/js/global.js
