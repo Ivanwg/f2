@@ -6315,6 +6315,29 @@ function _typeof(o) { "@babel/helpers - typeof"; return _typeof = "function" == 
 
 /***/ }),
 
+/***/ 7369:
+/***/ (() => {
+
+(function () {
+  document.addEventListener('DOMContentLoaded', function (e) {
+    document.querySelector("#show_hide_password button").addEventListener('click', function (event) {
+      event.preventDefault();
+      console.log(88);
+      if (document.querySelector('#show_hide_password input').getAttribute("type") == "text") {
+        document.querySelector('#show_hide_password input').setAttribute('type', 'password');
+        document.querySelector('#show_hide_password button').classList.add("eye-slash");
+        document.querySelector('#show_hide_password button').classList.remove("eye");
+      } else if (document.querySelector('#show_hide_password input').getAttribute("type") == "password") {
+        document.querySelector('#show_hide_password input').setAttribute('type', 'text');
+        document.querySelector('#show_hide_password button').classList.remove("eye-slash");
+        document.querySelector('#show_hide_password button').classList.add("eye");
+      }
+    });
+  });
+})();
+
+/***/ }),
+
 /***/ 6266:
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
@@ -15287,7 +15310,10 @@ _global["default"]._babelPolyfill = true;
 const logo_namespaceObject = __webpack_require__.p + "img/logo.svg";
 // EXTERNAL MODULE: ./src/assets/bootstrap/js/bootstrap.bundle.js
 var bootstrap_bundle = __webpack_require__(6662);
+// EXTERNAL MODULE: ./src/assets/js/global.js
+var global = __webpack_require__(7369);
 ;// CONCATENATED MODULE: ./src/assets/js/imports.js
+
 
 
 

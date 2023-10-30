@@ -3108,7 +3108,7 @@ progress {
   font-weight: 400;
   line-height: 1.5;
   color: #212529;
-  background-color: #fff;
+  background-color: transparent;
   background-clip: padding-box;
   border: 1px solid #ced4da;
   -webkit-appearance: none;
@@ -3131,9 +3131,9 @@ progress {
 .form-control:focus {
   color: #212529;
   background-color: #fff;
-  border-color: #86b7fe;
+  border-color: var(--bs-dark);
   outline: 0;
-  box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+  /* box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25); */
 }
 .form-control::-webkit-date-and-time-value {
   height: 1.5em;
@@ -3374,13 +3374,19 @@ textarea.form-control-lg {
   filter: brightness(90%);
 }
 .form-check-input:focus {
-  border-color: #86b7fe;
+  border-color: var(--bs-gray);
   outline: 0;
-  box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+  /* box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25); */
+  outline: 1px solid black;
+  outline-offset: 2px;
+}
+
+.form-check-input:hover {
+  border-color: black;
 }
 .form-check-input:checked {
-  background-color: #0d6efd;
-  border-color: #0d6efd;
+  background-color: black;
+  border-color: black;
 }
 .form-check-input:checked[type=checkbox] {
   background-image: url("data:image/svg+xml,%3csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 20 20%27%3e%3cpath fill=%27none%27 stroke=%27%23fff%27 stroke-linecap=%27round%27 stroke-linejoin=%27round%27 stroke-width=%273%27 d=%27M6 10l3 3l6-6%27/%3e%3c/svg%3e");
@@ -3389,8 +3395,8 @@ textarea.form-control-lg {
   background-image: url("data:image/svg+xml,%3csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%27-4 -4 8 8%27%3e%3ccircle r=%272%27 fill=%27%23fff%27/%3e%3c/svg%3e");
 }
 .form-check-input[type=checkbox]:indeterminate {
-  background-color: #0d6efd;
-  border-color: #0d6efd;
+  background-color: black;
+  border-color: black;
   background-image: url("data:image/svg+xml,%3csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 20 20%27%3e%3cpath fill=%27none%27 stroke=%27%23fff%27 stroke-linecap=%27round%27 stroke-linejoin=%27round%27 stroke-width=%273%27 d=%27M6 10h8%27/%3e%3c/svg%3e");
 }
 .form-check-input:disabled {
@@ -6102,7 +6108,7 @@ textarea.form-control-lg {
 }
 .btn-close:focus {
   outline: 0;
-  box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+  /* box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25); */
   opacity: 1;
 }
 .btn-close:disabled, .btn-close.disabled {
@@ -11934,6 +11940,39 @@ input:hover, input:active, input:focus, input:focus-visible {
   transform: scale(1.05);
 }
 
+.black-b-border {
+  font-size: 14px;
+  color: black;
+  transition-property: all;
+  transition-duration: 0.2s;
+  transition-timing-function: ease;
+}
+.black-b-border .text {
+  position: relative;
+}
+.black-b-border .text::before {
+  position: absolute;
+  content: "";
+  display: block;
+  left: 0;
+  right: 0;
+  bottom: -1.3px;
+  border-bottom: 1px solid var(--bs-dark);
+  transform-origin: left center;
+}
+.black-b-border:hover {
+  color: black;
+}
+.black-b-border:hover .text::before {
+  animation: go 0.4s ease forwards;
+}
+.black-b-border:active {
+  color: var(--bs-gray);
+}
+.black-b-border:active .text::before {
+  border-color: var(--bs-gray);
+}
+
 .btn-gray {
   color: var(--bs-gray);
   transition-property: all;
@@ -12392,6 +12431,98 @@ input:hover, input:active, input:focus, input:focus-visible {
 .header__logo {
   padding-right: 3rem;
 }
+.form-close {
+  top: 10px;
+  right: 10px;
+}
+
+.cart-close svg path {
+  transition-property: all;
+  transition-duration: 0.2s;
+  transition-timing-function: ease;
+}
+.cart-close:hover svg path {
+  fill: black;
+}
+
+.form-modal {
+  z-index: 2;
+  width: 344px;
+  padding-top: 30px;
+}
+.form-modal .input-password {
+  padding-right: 30px;
+}
+.form-modal .eye-btn {
+  position: relative;
+  color: var(--bs-gray);
+  right: 17px;
+  width: 18px;
+  height: 18px;
+  transition-duration: 0.2s;
+}
+.form-modal .eye-btn.eye-slash:after {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: block;
+  width: 18px;
+  height: 10px;
+  content: "";
+  border-top: 2px solid var(--bs-gray);
+  transform: rotate(-45deg) translate(1px, -2px);
+  transform-origin: center center;
+  transition-property: all;
+  transition-duration: 0.2s;
+  transition-timing-function: ease;
+}
+.form-modal .eye-btn:hover {
+  color: var(--bs-dark);
+}
+.form-modal .eye-btn:hover::after {
+  border-color: black;
+}
+
+.cart-modal {
+  width: 344px;
+}
+.cart-modal__header {
+  padding: 30px 0;
+}
+.cart-modal__content {
+  padding: 50px 0 24px;
+  border-bottom: 1px solid #D9D9D9;
+  border-top: 1px solid #D9D9D9;
+}
+.cart-modal__products {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-height: 60vh;
+  overflow-y: scroll;
+}
+.cart-modal__product-img {
+  height: 105px;
+  width: 105px;
+  border-radius: 10px;
+  overflow: hidden;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+.cart-modal__product button svg path {
+  transition-property: all;
+  transition-duration: 0.2s;
+  transition-timing-function: ease;
+}
+.cart-modal__product button:hover svg path {
+  fill: black;
+}
+.cart-modal__price {
+  font-size: 12px;
+}
+.cart-modal__count {
+  font-weight: 300;
+}
 
 .footer {
   border-top: 1px solid #D9D9D9;
@@ -12433,34 +12564,6 @@ input:hover, input:active, input:focus, input:focus-visible {
 .footer .subscribe-form label input::placeholder {
   font-size: 14px;
   color: var(--bs-gray);
-}
-.footer .subscribe-form__submit {
-  font-size: 14px;
-  transition-property: all;
-  transition-duration: 0.2s;
-  transition-timing-function: ease;
-}
-.footer .subscribe-form__submit .text {
-  position: relative;
-}
-.footer .subscribe-form__submit .text::before {
-  position: absolute;
-  content: "";
-  display: block;
-  left: 0;
-  right: 0;
-  bottom: -1.3px;
-  border-bottom: 1px solid var(--bs-dark);
-  transform-origin: left center;
-}
-.footer .subscribe-form__submit:hover .text::before {
-  animation: go 0.4s ease forwards;
-}
-.footer .subscribe-form__submit:active {
-  color: var(--bs-gray);
-}
-.footer .subscribe-form__submit:active .text::before {
-  border-color: var(--bs-gray);
 }
 .footer__col_desc {
   grid-column: 1/2;
