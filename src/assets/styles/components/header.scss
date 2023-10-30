@@ -12,12 +12,26 @@
     // bottom: auto !important;
   }
 }
+.form-close {
+  top: 10px;
+  right: 10px;
+}
+
+.cart-close {
+  svg path {
+    @include transition;
+  }
+  &:hover {
+    svg path {
+      fill: black;
+    }
+  }
+}
 
 .form-modal {
   z-index: 2;
   width: 344px;
   padding-top: 30px;
-  background-color: white;
   .input-password {
     padding-right: 30px;
   }
@@ -50,5 +64,52 @@
         border-color: black;
       }
     }
+  }
+}
+
+.cart-modal {
+  width: 344px;
+  &__header {
+    padding: 30px 0;
+  }
+  &__content {
+    padding: 50px 0 24px;
+    border-bottom: 1px solid #D9D9D9;
+    border-top: 1px solid #D9D9D9;
+  }
+  &__content {
+  }
+  &__products {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-height: 60vh;
+    overflow-y: scroll;
+  }
+  &__product-img {
+    height: 105px;
+    width: 105px;
+    border-radius: 10px;
+    overflow: hidden;
+    object-fit: cover;
+    flex-shrink: 0;
+  }
+  &__product {
+    button {
+      svg path {
+        @include transition;
+      }
+      &:hover {
+        svg path {
+          fill: black;
+        }
+      }
+    }
+  }
+  &__price {
+    font-size: 12px;
+  }
+  &__count {
+    font-weight: 300;
   }
 }
